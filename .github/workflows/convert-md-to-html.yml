@@ -8,7 +8,7 @@ on:
 
 
 jobs:
-  buld:
+  build:
     run-on: ubuntu-latest
 
     setps:
