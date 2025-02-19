@@ -32,4 +32,4 @@ jobs:
         git commit -am "Update HTML file"
         git push origin main
       env:
-        GITHUB_TOKEN: ${{ secrets.MY_LINKS }}
+        GH_TOKEN: ${{ secrets.MY_LINKS }}
