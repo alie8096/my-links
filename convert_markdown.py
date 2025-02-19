@@ -64,7 +64,7 @@ def markdown_to_html(md_text):
 
 # Function to read markdown file and convert to HTML
 def convert_markdown_file(input_file, output_file):
-    with open(inut_file, "r", encoding="utf-8") as file:
+    with open(input_file, "r", encoding="utf-8") as file:
         md_text = file.read()
 
     html_output = markdown_to_html(md_text)
