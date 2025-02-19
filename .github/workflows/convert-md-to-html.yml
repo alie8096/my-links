@@ -1,20 +1,17 @@
 name: Convert Markdown to HTML
 
-
 on:
   push:
     branches:
       - main
 
-
 jobs:
   build:
-    run-on: ubuntu-latest
+    runs-on: ubuntu-latest
 
-    setps:
+    steps:
     - name: Checkout code
       uses: actions/checkout@v3
-
 
     - name: Set up Python
       uses: actions/setup-python@v3
@@ -35,4 +32,4 @@ jobs:
         git commit -am "Update HTML file"
         git push origin main
       env:
-        GITHUB_TOKEN: ${{ secrets.MY_LINKS  }}
+        GITHUB_TOKEN: ${{ secrets.MY_LINKS }}
